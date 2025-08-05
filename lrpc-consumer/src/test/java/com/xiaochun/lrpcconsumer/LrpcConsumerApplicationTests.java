@@ -1,10 +1,10 @@
-package com.xiaochun.lrpc;
+package com.xiaochun.lrpcconsumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LrpcApplicationTests {
+class LrpcConsumerApplicationTests {
 
     @Test
     void contextLoads() {
