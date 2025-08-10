@@ -2,24 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.xiaochun</groupId>
-    <artifactId>lrpc</artifactId>
+
+    <artifactId>lrpc-registry</artifactId>
+    <name>lrpc-registry</name>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lrpc</name>
-    <description>lrpc</description>
+    <description>lrpc-registry</description>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.13</version>
+        <groupId>com.xiaochun</groupId>
+        <artifactId>lrpc</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <modules>
-        <module>lrpc-core</module>
-        <module>lrpc-consumer</module>
-        <module>lrpc-provider</module>
-        <module>lrpc-registry</module>
-    </modules>
 
     <properties>
         <java.version>11</java.version>
@@ -27,6 +20,19 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.6.13</spring-boot.version>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 
     <build>
         <plugins>
@@ -45,7 +51,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.xiaochun.lrpc.LrpcApplication</mainClass>
+                    <mainClass>com.xiaochun.lrpcregistry.LrpcRegistryApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
