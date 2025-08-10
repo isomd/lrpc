@@ -8,6 +8,8 @@
     <name>lrpc</name>
     <description>lrpc</description>
 
+    <packaging>pom</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
